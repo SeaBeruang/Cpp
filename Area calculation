@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+class Rectangle{
+	int width, height;
+	public: //can be accesed from anywhere
+		void set_values(int,int);
+		int calculate_area()
+	{
+		return width*height;
+	}
+};
+
+void Rectangle::set_values(int x,int y)
+{
+	width = x;
+	height = y;
+}
+// :: is a scope operator
+// set_values is a function from class rectangle
+
+int main()
+{
+	Rectangle myphone, iphonex; //create an object of class rectangle
+	myphone.set_values(6,4);
+	iphonex.set_values(10,5);
+	cout << "My phone area : " << myphone.calculate_area() << endl;
+	cout << "Iphone X area : " << iphonex.calculate_area() << endl;
+	return 0;
+}
