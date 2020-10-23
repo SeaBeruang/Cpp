@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	int bagi, dibagi, quotient, remainder;
+	
+	cout << ("Masukin angka yang mau dibagi: ");
+	cin >> bagi;
+	
+	cout << ("\nMasukin angka pembagi: ");
+	cin >> dibagi;
+	
+	quotient = bagi / dibagi;
+	remainder = bagi % dibagi;
+	
+	cout << "quotient = " << quotient << endl;
+	cout << "remainder = " << remainder << endl;
+
+return 0;
+}
